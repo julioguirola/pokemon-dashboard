@@ -18,7 +18,7 @@ export async function signin(prevState: any, formData: FormData) {
 
   if (username === "user" && password === "1234") {
     await createSession(username);
-    return redirect("/dashboard");
+    return redirect("/dashboard?page=1");
   } else {
     return {
       message: "Wrong credentials",

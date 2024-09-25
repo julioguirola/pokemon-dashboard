@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import type { Viewport } from "next";
 import "./global.css";
 
 /**
@@ -19,11 +18,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
 };
 
-export const viewport: Viewport = {
-  themeColor: "#f97316",
-};
-
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;

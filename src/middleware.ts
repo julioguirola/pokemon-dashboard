@@ -26,8 +26,22 @@ export default async function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL("/login", req.nextUrl));
   }
 
+  if (isProtectedRoute) {
+    const headers = new Headers(req.headers);
+    const page = req.nextUrl.searchParams.get("page");
+    if (page === null || isNaN(Number(page))) {
+      return NextResponse.redirect(new URL("/_not-found", req.nextUrl));
+    }
+    //preventing page under 1
+    headers.set("x-current-page", page === null ? "1" : page);
+    return NextResponse.next({ headers });
+  }
+
   if (isLogin && session?.userId) {
-    return NextResponse.redirect(new URL("/dashboard", req.nextUrl));
+    const response = NextResponse.redirect(
+      new URL("/dashboard?page=1", req.nextUrl),
+    );
+    return response;
   }
 }
 
