@@ -6,7 +6,12 @@ export const metadata: Metadata = {
 export default function () {
   return (
     <>
-      <ButtonHome />
+      <header className="p-5 flex">
+        <ButtonHome />
+      </header>
+      <main className="flex h-[400px] w-vw justify-center align-center items-center">
+        <p>En desarrollo</p>
+      </main>
     </>
   );
 }

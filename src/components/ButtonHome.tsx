@@ -6,7 +6,7 @@ import nav from "@/actions/nav";
 export default function () {
   return (
     <>
-      <Button onClick={() => nav("/")}>Iinicio</Button>
+      <Button onClick={() => nav("/")}>Home</Button>
     </>
   );
 }

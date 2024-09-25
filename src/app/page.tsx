@@ -26,7 +26,7 @@ export default async function Home() {
             dashboard. Get insights, stats, and manage your Pokémon journey like
             never before!
           </p>
-          <Button className="bg-green-500 hover:bg-green-600 w-60" asChild>
+          <Button className="bg-green-600 hover:bg-green-700 w-60" asChild>
             <Link href={"/dashboard"}>Get Started</Link>
           </Button>
         </section>
