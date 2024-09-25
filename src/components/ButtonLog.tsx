@@ -5,14 +5,7 @@ import { logout } from "@/actions/auth";
 
 export default function ({ caso }: { caso: "login" | "logout" }) {
   if (caso === "login") {
-    return (
-      <Button
-        className="bg-blue-500 hover:bg-blue-600"
-        onClick={() => nav("/login")}
-      >
-        Login
-      </Button>
-    );
+    return <Button onClick={() => nav("/login")}>Login</Button>;
   } else {
     return <Button onClick={() => logout()}>Log Out</Button>;
   }

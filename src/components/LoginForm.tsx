@@ -24,10 +24,8 @@ export default function () {
           id="pass"
           placeholder="Password"
         />
-        <Button className="bg-blue-500 hover:bg-blue-600" type="submit">
-          Submit
-        </Button>
-        <Button className="bg-green-500 hover:bg-green-600" asChild>
+        <Button type="submit">Submit</Button>
+        <Button asChild>
           <Link href={"/"}>Go Back</Link>
         </Button>
       </form>
