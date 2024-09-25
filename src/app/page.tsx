@@ -19,7 +19,7 @@ export default async function Home() {
 
   return (
     <>
-      <header className="flex justify-between align-center items-center h-1/5 p-10">
+      <header className="flex justify-between align-center items-center h-1/5 p-10 sticky top-0">
         <h1 className="text-2xl">Wellcome to the Pokemon Dashboard</h1>
         <ButtonLog caso={authed ? "logout" : "login"} />
       </header>
