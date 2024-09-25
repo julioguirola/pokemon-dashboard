@@ -8,7 +8,6 @@ export default function () {
     <div className="h-dvh flex justify-center items-center">
       <form action={signin} className="w-[300px] flex flex-col gap-5">
         <h1 className="text-2xl">Log In</h1>
-        <label htmlFor="user">User</label>
         <Input
           type="text"
           required
@@ -16,7 +15,6 @@ export default function () {
           id="user"
           placeholder="Username"
         />
-        <label htmlFor="pass">User</label>
         <Input
           type="password"
           required
