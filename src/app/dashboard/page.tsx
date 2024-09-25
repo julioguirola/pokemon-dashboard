@@ -65,7 +65,7 @@ export default async function () {
             </PaginationItem>
             <PaginationItem>
               <PaginationLink
-                className="dark:bg-white bg-black text-black"
+                className="dark:bg-white dark:text-black bg-black text-white"
                 href="#"
               >
                 {page}
