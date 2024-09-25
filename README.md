@@ -17,6 +17,11 @@ Setting the environment variable SESSION_SECRET for hashing userID:
 
 ```bash
   openssl rand -base64 32
+
+  ## Copy the output
+  ## Create an .env file
+  ## In the .env file:
+  ## SESSION_SECRET=[output]
 ```
 
 
@@ -25,4 +30,4 @@ Setting the environment variable SESSION_SECRET for hashing userID:
 - Component styling: In the shadcdn/UI components configuration file (components.json) we set the cssVariables property to false to use tailwind instead
 
 ## Third-Party Libraries
-- [REDACTED]: We use the third-party library called jose to implement the authentication system based on Json Web Tokens JWT
+- We use the third-party library called jose to implement the authentication system based on Json Web Tokens JWT
