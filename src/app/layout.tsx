@@ -1,10 +1,22 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import "./global.css";
 
 export const metadata: Metadata = {
   title: "Home",
   description:
     "Dashboard to display image, name, type and attributes of each pokemon",
+  openGraph: {
+    title: "Pokemon Dashboard",
+    description:
+      "Dashboard to display image, name, type and attributes of each pokemon",
+    images: [{ url: "/pikachu.png" }],
+  },
+  robots: "index, follow",
+};
+
+export const viewport: Viewport = {
+  themeColor: "#f97316",
 };
 
 export default function RootLayout({
@@ -14,16 +26,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head>
-        <meta name="robots" content="index, follow" />
-        <meta name="theme-color" content="#f97316" />
-        <meta property="og:title" content="Pokemon Dashboard" />
-        <meta
-          property="og:description"
-          content="Dashboard to display image, name, type and attributes of each pokemon"
-        />
-        <meta property="og:image" content="/pikachu.png" />
-      </head>
       <body className="dark:bg-stone-950 dark:text-white h-dvh">
         {children}
       </body>

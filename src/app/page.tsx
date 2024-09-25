@@ -10,6 +10,9 @@ import {
 } from "@/components/ui/carousel";
 import Image from "next/image";
 import Link from "next/link";
+import pikachu from "../../public/pikachu.png";
+import charmander from "../../public/charmander.png";
+import squirtle from "../../public/squirtle.png";
 
 export default async function Home() {
   const authed = await isAuthenticated();
@@ -34,29 +37,13 @@ export default async function Home() {
           <Carousel className="w-[300px]">
             <CarouselContent>
               <CarouselItem className="flex justify-center">
-                <Image
-                  src="/pikachu.png"
-                  alt="pikachu photo"
-                  width={250}
-                  height={250}
-                  priority
-                />
+                <Image src={pikachu} alt="pikachu photo" priority width={250} />
               </CarouselItem>
               <CarouselItem className="flex justify-center">
-                <Image
-                  src="/charmander.png"
-                  alt="charmander photo"
-                  width={250}
-                  height={250}
-                />
+                <Image src={charmander} alt="charmander photo" width={250} />
               </CarouselItem>
               <CarouselItem className="flex justify-center">
-                <Image
-                  src="/squirtle.png"
-                  alt="squirtle photo"
-                  width={250}
-                  height={250}
-                />
+                <Image src={squirtle} alt="squirtle photo" width={250} />
               </CarouselItem>
             </CarouselContent>
             <CarouselPrevious />
