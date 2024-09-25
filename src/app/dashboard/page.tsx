@@ -43,7 +43,7 @@ export default async function () {
 
   return (
     <>
-      <header className="flex flex-wrap justify-between items-center gap-5 p-10">
+      <header className="flex flex-wrap bg-white dark:bg-stone-950 justify-between items-center gap-5 p-10 sticky top-0">
         <h1 className="text-2xl">Dashboard</h1>
         <Pagination className="w-[300px]">
           <PaginationContent>
@@ -64,7 +64,10 @@ export default async function () {
               )}
             </PaginationItem>
             <PaginationItem>
-              <PaginationLink className="bg-white text-black" href="#">
+              <PaginationLink
+                className="dark:bg-white bg-black text-black"
+                href="#"
+              >
                 {page}
               </PaginationLink>
             </PaginationItem>
