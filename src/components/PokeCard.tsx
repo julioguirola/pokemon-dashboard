@@ -5,7 +5,7 @@ export default async function ({ name, url }: { name: string; url: string }) {
   const data = await res.json();
 
   return (
-    <div className="min-w-[250px] p-3 border border-solid border-black rounded-lg dark:border-white">
+    <div className="min-w-[250px] hover:bg-black hover:text-white dark:hover:bg-white dark:hover:text-black cursor-pointer p-3 border border-solid border-black rounded-lg dark:border-white">
       <div className="flex gap-5 items-center justify-center">
         <strong>{name}</strong>
         <Image
