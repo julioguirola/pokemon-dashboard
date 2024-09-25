@@ -1,8 +1,19 @@
 import ButtonHome from "@/components/ButtonHome";
 import type { Metadata } from "next";
+
 export const metadata: Metadata = {
   title: "Dashboard",
+  description:
+    "Dashboard to display image, name, type and attributes of each pokemon",
+  openGraph: {
+    title: "Pokemon Dashboard",
+    description:
+      "Dashboard to display image, name, type and attributes of each pokemon",
+    images: [{ url: "/pikachu.png" }],
+  },
+  robots: "index, follow",
 };
+
 export default function () {
   return (
     <>

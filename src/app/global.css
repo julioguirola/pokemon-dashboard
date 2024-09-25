@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* This is the ShadCN theme configuration styles.
+   It defines CSS variables for light and dark themes,
+   which are used throughout the application to maintain
+   consistent styling and enable easy theme switching.
+   The variables cover various aspects like background,
+   foreground, primary and secondary colors, as well as
+   specific UI element colors. */
+
 @layer base {
     :root {
         --background: 0 0% 100%;

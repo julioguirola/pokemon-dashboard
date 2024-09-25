@@ -2,6 +2,10 @@ import type { Metadata } from "next";
 import type { Viewport } from "next";
 import "./global.css";
 
+/**
+ * The metadata configuration for the application.
+ * This object defines various metadata properties used for SEO and social sharing.
+ */
 export const metadata: Metadata = {
   title: "Home",
   description:
