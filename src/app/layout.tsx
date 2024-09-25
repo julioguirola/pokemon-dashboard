@@ -24,7 +24,7 @@ export default async function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html translate="no" className="notranslate" lang="en">
       <body className="dark:bg-stone-950 dark:text-white h-dvh">
         {children}
       </body>
