@@ -4,7 +4,7 @@ import { createSession } from "@/lib/session";
 import { redirect } from "next/navigation";
 import { deleteSession } from "@/lib/session";
 
-export async function signin(formData: FormData) {
+export async function signin(prevState: any, formData: FormData) {
   const { username, password } = {
     username: formData.get("username"),
     password: formData.get("password"),
@@ -13,6 +13,10 @@ export async function signin(formData: FormData) {
   if (username === "user" && password === "1234") {
     await createSession(username);
     return redirect("/dashboard");
+  } else {
+    return {
+      message: "Wrong credentials",
+    };
   }
 }
 
