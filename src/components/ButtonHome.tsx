@@ -1,12 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import nav from "@/actions/nav";
+import Link from "next/link";
 
 export default function () {
   return (
     <>
-      <Button onClick={() => nav("/")}>Home</Button>
+      <Button asChild>
+        <Link href={"/"}>Home</Link>
+      </Button>
     </>
   );
 }
