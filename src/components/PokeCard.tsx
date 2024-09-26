@@ -24,7 +24,7 @@ export default async function ({ name, url }: { name: string; url: string }) {
           ))}
         </div>
         <div className="border border-solid border-black dark:border-white p-3 rounded-lg">
-          <p>Abilitys:</p>
+          <p>Abilities:</p>
           {data.abilities.map((t: { ability: { name: string } }, i: number) => (
             <p key={i}>{t.ability.name}</p>
           ))}
