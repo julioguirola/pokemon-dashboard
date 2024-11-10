@@ -29,7 +29,7 @@ export default function () {
           required
           name="password"
           id="pass"
-          placeholder="Password"
+          placeholder="Password is 1234"
         />
         <p aria-live="polite" className="text-red-600">
           {state?.message}
