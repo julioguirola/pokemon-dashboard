@@ -22,7 +22,7 @@ export default function () {
           required
           name="username"
           id="user"
-          placeholder="Username"
+          placeholder="Username is user"
         />
         <Input
           type="password"
